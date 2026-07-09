@@ -1,0 +1,23 @@
+const profileCard = document.getElementById("profileCard");
+const profileImage = document.getElementById("profileImage");
+const profileName = document.getElementById("profileName");
+const profileRole = document.getElementById("profileRole");
+
+document.getElementById("updateNameBtn").addEventListener("click", () => {
+    const name = prompt("Enter new name:");
+    if (name) profileName.textContent = name;
+});
+
+document.getElementById("updateRoleBtn").addEventListener("click", () => {
+    const role = prompt("Enter new role:");
+    if (role) profileRole.textContent = role;
+});
+
+document.getElementById("toggleStatusBtn").addEventListener("click", () => {
+    profileCard.classList.toggle("active-status");
+});
+
+document.getElementById("changeImageBtn").addEventListener("click", () => {
+    const img = prompt("Enter image URL:");
+    if (img) profileImage.src = img;
+});

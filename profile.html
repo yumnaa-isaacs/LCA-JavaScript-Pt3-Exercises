@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic Profile Card</title>
+
+    <style>
+        #profileCard {
+            width: 300px;
+            padding: 20px;
+            margin: 20px auto;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+
+        .active-status {
+            background: lightgreen;
+        }
+
+        img {
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+
+<div id="profileCard">
+    <img id="profileImage" src="https://placehold.co/100x100">
+    <h2 id="profileName">Yumnaa Isaacs</h2>
+    <p id="profileRole">Software Developer</p>
+    <p id="profileBio">Passionate about coding and learning new technologies.</p>
+
+    <button id="updateNameBtn">Update Name</button>
+    <button id="updateRoleBtn">Update Role</button>
+    <button id="toggleStatusBtn">Toggle Active Status</button>
+    <button id="changeImageBtn">Change Image</button>
+</div>
+
+<script src="week8_ex02_dom_profile_card.js"></script>
+
+</body>
+</html>
